@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+
+  telegram-pmchat:
+    image: telegram-pmchat-bot:latest
+    stdin_open: true
+    tty: true
+    restart: always
+    build:
+      context: .
+    environment:
+#      - BOT_TOKEN=$BOT_TOKEN
+      - TZ=Europe/Minsk
